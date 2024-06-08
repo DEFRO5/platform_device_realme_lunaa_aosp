@@ -23,6 +23,9 @@ EVEREST_MAINTAINER := Vimal😊
 TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 
+# Build Launcher3 in GAPPS (default is Pixel Launcher)
+TARGET_INCLUDE_PIXEL_LAUNCHER := false
+
 PRODUCT_NAME := everest_lunaa
 PRODUCT_DEVICE := lunaa
 PRODUCT_MANUFACTURER := realme
