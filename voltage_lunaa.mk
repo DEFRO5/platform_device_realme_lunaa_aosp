@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lunaa device
 $(call inherit-product, device/realme/lunaa/device.mk)
 
-# Inherit some common YAAP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit some common Voltage stuff.
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
-PRODUCT_NAME := yaap_lunaa
+PRODUCT_NAME := voltage_lunaa
 PRODUCT_DEVICE := lunaa
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_BRAND := Realme
@@ -30,3 +30,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=RMX3360 \
     SystemDevice=RE54ABL1 \
     SystemName=RMX3360
+
+# VoltageOS stuff    
+TARGET_BOOT_ANIMATION_RES := 1080
+VOLTAGE_BUILD_TYPE := UNOFFICIAL
